@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7</title>
+</head>
+<body>
+<script>
+    let array =[];
+    for(let i =0; i<10;i++){
+        array.push(prompt('nhap vao mot so'))
+    }
+    let v= prompt('nhap vao so nguyen V');
+    for(let j =0;j<array.length;j++){
+        if(v==array[j]){
+            for(let k=j;k<array.length;k++){
+                array[k]=array[k+1];
+                if(array[k]==9){array[9]='0'};
+            }
+
+        }
+    }
+    console.log(array)
+
+</script>
+</body>
+</html>
